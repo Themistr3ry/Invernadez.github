@@ -1,0 +1,269 @@
+/* EMPLOYEES PAGE STYLES */
+
+.employees-hero {
+  background-color: rgba(126, 142, 168, 1);
+  color: var(--color-blanco);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.employees-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: var(--spacing-sm);
+}
+
+.employees-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Leadership Section */
+.leadership-section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-gris-fondo);
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+/* Employee Cards */
+.employee-card {
+  background-color: var(--color-blanco);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+  opacity: 1;
+}
+
+.employee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+.employee-card.featured {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.employee-image.with-icon {
+  background: linear-gradient(135deg, var(--color-azul-oscuro) 0%, var(--color-azul-suave) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: var(--color-blanco);
+}
+
+.employee-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+}
+
+.employee-card:hover .employee-image img {
+  transform: scale(1.1);
+}
+
+.employee-card.featured .employee-image {
+  height: 300px;
+}
+
+.employee-info {
+  padding: var(--spacing-lg);
+}
+
+.employee-info h3 {
+  font-size: 1.5rem;
+  color: var(--color-azul-oscuro);
+  margin-bottom: var(--spacing-xs);
+  font-weight: 700;
+}
+
+.employee-role {
+  color: var(--color-amarillo);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.employee-bio {
+  color: var(--color-texto-claro);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.employee-location {
+  color: var(--color-texto-claro);
+  font-size: 0.95rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.employee-location i {
+  color: var(--color-amarillo);
+  margin-right: 5px;
+}
+
+.employee-contact {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.employee-contact a {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-azul-oscuro);
+  color: var(--color-blanco);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all var(--transition-normal);
+}
+
+.employee-contact a:hover {
+  background-color: var(--color-amarillo);
+  transform: scale(1.1);
+}
+
+/* Team Section */
+.team-section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-blanco);
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 10px 25px;
+  background-color: var(--color-blanco);
+  color: var(--color-azul-oscuro);
+  border: 2px solid var(--color-azul-oscuro);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--color-azul-oscuro);
+  color: var(--color-blanco);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.team-grid .employee-card {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Join Team Section */
+.join-team-section {
+  padding: var(--spacing-xl) 0;
+  background-color: rgba(126, 142, 168, 1);
+  color: var(--color-blanco);
+  text-align: center;
+}
+
+.join-team-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: var(--spacing-md);
+}
+
+.join-team-content p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg);
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.join-team-section .btn-submit {
+  background-color: var(--color-amarillo);
+  display: inline-block;
+  margin: 0;
+}
+
+.join-team-section .btn-submit:hover {
+  background-color: var(--color-amarillo-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .employees-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .filter-buttons {
+    gap: 10px;
+  }
+
+  .filter-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .employees-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .employee-image {
+    height: 150px;
+    font-size: 4rem;
+  }
+
+  .employee-card.featured .employee-image {
+    height: 180px;
+    font-size: 4.5rem;
+  }
+
+  .employee-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .join-team-content h2 {
+    font-size: 2rem;
+  }
+
+  .join-team-content p {
+    font-size: 1rem;
+  }
+}
