@@ -1,0 +1,430 @@
+/* LOANS PAGE STYLES */
+
+.loans-hero {
+  background-color: rgba(126, 142, 168, 1);
+  color: var(--color-blanco);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.loans-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: var(--spacing-sm);
+}
+
+.loans-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Loans Section */
+.loans-section {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-gris-fondo);
+}
+
+.loans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.loan-card {
+  background-color: var(--color-blanco);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-normal);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.loan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.loan-card.featured {
+  border: 3px solid var(--color-amarillo);
+  transform: scale(1.05);
+}
+
+.loan-card.featured:hover {
+  transform: scale(1.05) translateY(-8px);
+}
+
+.featured-badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: linear-gradient(135deg, var(--color-amarillo) 0%, var(--color-amarillo-hover) 100%);
+  color: var(--color-blanco);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-md);
+}
+
+.loan-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--spacing-md);
+  background: linear-gradient(135deg, var(--color-azul-oscuro) 0%, var(--color-azul-suave) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: var(--color-blanco);
+}
+
+.loan-card h3 {
+  font-size: 1.8rem;
+  color: var(--color-azul-oscuro);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  font-weight: 700;
+}
+
+.loan-description {
+  text-align: center;
+  color: var(--color-texto-claro);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.6;
+}
+
+.loan-features {
+  background-color: var(--color-gris-fondo);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) 0;
+  color: var(--color-texto);
+}
+
+.feature-item i {
+  color: var(--color-amarillo);
+  font-size: 1.2rem;
+  min-width: 25px;
+}
+
+.feature-item strong {
+  color: var(--color-azul-oscuro);
+  font-weight: 700;
+}
+
+.loan-benefits {
+  margin-bottom: var(--spacing-lg);
+  flex-grow: 1;
+}
+
+.loan-benefits h4 {
+  font-size: 1.2rem;
+  color: var(--color-azul-oscuro);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+}
+
+.loan-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.loan-benefits li {
+  padding: 8px 0;
+  color: var(--color-texto);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.loan-benefits li i {
+  color: var(--color-success);
+  font-size: 1rem;
+}
+
+.btn-apply {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, var(--color-amarillo) 0%, var(--color-amarillo-hover) 100%);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-apply:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-apply i {
+  margin-right: 8px;
+}
+
+/* Requirements Section */
+.requirements-section {
+  padding: var(--spacing-xl) 0;
+  background-color: rgba(124, 141, 171, 1);
+}
+
+.requirements-section .section-title {
+  color: white;
+}
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.requirement-item {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background-color: var(--color-gris-fondo);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+}
+
+.requirement-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.requirement-item i {
+  font-size: 3rem;
+  color: var(--color-amarillo);
+  margin-bottom: var(--spacing-md);
+}
+
+.requirement-item h4 {
+  font-size: 1.3rem;
+  color: var(--color-azul-oscuro);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+}
+
+.requirement-item p {
+  color: var(--color-texto-claro);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: var(--color-blanco);
+  border-radius: var(--radius-md);
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  background: rgba(126, 142, 168, 1);
+  color: var(--color-blanco);
+  padding: var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--color-blanco);
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all var(--transition-fast);
+}
+
+.modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.loan-info-banner {
+  background: linear-gradient(135deg, var(--color-amarillo) 0%, var(--color-amarillo-hover) 100%);
+  padding: var(--spacing-md);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.loan-info-item {
+  text-align: center;
+  color: var(--color-blanco);
+}
+
+.info-label {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.modal-body {
+  padding: var(--spacing-lg);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+.form-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 12px;
+  background-color: var(--color-gris-fondo);
+  color: var(--color-texto);
+  border: 2px solid var(--color-texto-claro);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.btn-cancel:hover {
+  background-color: var(--color-texto-claro);
+  color: var(--color-blanco);
+}
+
+.form-actions .btn-submit {
+  flex: 2;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .loans-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .loans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .loan-card.featured {
+    transform: scale(1);
+  }
+
+  .loan-card.featured:hover {
+    transform: translateY(-8px);
+  }
+
+  .requirements-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .loan-info-banner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .loans-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .loan-card {
+    padding: var(--spacing-md);
+  }
+
+  .loan-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .loan-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .modal-content {
+    max-height: 95vh;
+  }
+
+  .modal-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .loan-info-banner {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+}

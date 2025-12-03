@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contacta con Invernandez. Estamos aquí para ayudarte con tus necesidades de préstamos. Visítanos en nuestras oficinas o contáctanos por teléfono." />
+  <meta name="keywords" content="contacto, Invernandez, préstamos, República Dominicana, oficinas" />
+  
+  <title>Contacto - Invernandez</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="/index.html" class="logo">
+        <img src="/img/nvernande logo.png" alt="Invernandez Logo" />
+      </a>
+
+      <button class="burger-menu" aria-label="Abrir menú de navegación">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <nav class="navigation">
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/about/">Nosotros</a></li>
+          <li><a href="/services/">Préstamos</a></li>
+          <li><a href="/employees/">Empleados</a></li>
+          <li><a href="/offices/">Oficinas</a></li>
+          <li><a href="/contact/" class="is-active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte. Envíanos un mensaje y te responderemos lo antes posible.</p>
+      </div>
+    </section>
+
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-grid">
+          <article class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Teléfono</h3>
+            <p><a href="tel:+18095551234">+1 (809) 555-1234</a></p>
+            <p><a href="tel:+18095555678">+1 (809) 555-5678</a></p>
+          </article>
+
+          <article class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>WhatsApp</h3>
+            <p><a href="https://wa.me/18095551234" target="_blank" rel="noopener noreferrer">Chat con Nosotros</a></p>
+            <p><a href="https://wa.me/18095551234" target="_blank" rel="noopener noreferrer">+1 (809) 555-1234</a></p>
+          </article>
+
+          <article class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p><a href="mailto:info@invernandez.com">info@invernandez.com</a></p>
+            <p><a href="mailto:prestamos@invernandez.com">prestamos@invernandez.com</a></p>
+          </article>
+
+          <article class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Horario</h3>
+            <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+            <p>Sábados: 9:00 AM - 1:00 PM</p>
+          </article>
+
+          <article class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Oficina Principal</h3>
+            <p>Av. 27 de Febrero #123</p>
+            <p>Santo Domingo, República Dominicana</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="contact-form-grid">
+          <div class="form-info">
+            <h2>Envíanos un Mensaje</h2>
+            <p>Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
+            
+            <div class="social-links">
+              <h3>Síguenos en Redes Sociales</h3>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100070985199442&locale=es_LA" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/invernandezeirl/?hl=es" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/18095551234" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" action="/procesar-contacto" method="post">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo *</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                required
+                minlength="3"
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono *</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="809-000-0000"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="asunto">Asunto *</label>
+              <select id="asunto" name="asunto" required aria-required="true">
+                <option value="" disabled selected>Seleccione un asunto</option>
+                <option value="prestamo">Consulta sobre préstamos</option>
+                <option value="solicitud">Estado de solicitud</option>
+                <option value="pago">Información de pagos</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje *</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                placeholder="Escribe tu mensaje aquí..."
+                required
+                minlength="10"
+                aria-required="true"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i> Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="container">
+        <h2>Encuéntranos</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.3006!2d-69.9312!3d18.4861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI5JzEwLjAiTiA2OcKwNTUnNTIuMyJX!5e0!3m2!1ses!2sdo!4v1234567890"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de Invernandez"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container-footer">
+      <div class="footer-intro">
+        <img src="/img/nvernande logo.png" alt="Invernandez Logo" class="footer-logo" />
+        <p>Soluciones financieras confiables para impulsar tus proyectos y alcanzar tus metas con respaldo profesional.</p>
+      </div>
+
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>COMPAÑÍA</h3>
+          <ul>
+            <li><a href="/about/">¿Quiénes Somos?</a></li>
+            <li><a href="/employees/">Empleados</a></li>
+            <li><a href="/contact/">Contacto</a></li>
+            <li><a href="/faq/">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>OFICINAS</h3>
+          <ul>
+            <li><a href="/offices/#azua">Azua</a></li>
+            <li><a href="/offices/#barahona">Barahona</a></li>
+            <li><a href="/offices/#bonao">Bonao</a></li>
+            <li><a href="/offices/#salcedo">Salcedo-Moca</a></li>
+            <li><a href="/offices/#nagua">Nagua</a></li>
+            <li><a href="/offices/#romana">Romana</a></li>
+            <li><a href="/offices/#sancristobal">San Cristóbal</a></li>
+            <li><a href="/offices/#puertoplata">Puerto Plata</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>PRODUCTOS</h3>
+          <ul>
+            <li><a href="/services/#personales">Préstamos Personales</a></li>
+            <li><a href="/services/#empresariales">Préstamos Empresariales</a></li>
+            <li><a href="/services/#hipotecarios">Préstamos Hipotecarios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>LEGAL</h3>
+          <ul>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=100070985199442&locale=es_LA" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/invernandezeirl/?hl=es" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="footer-bottom">&copy; 2025 Invernandez. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <script>
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navigation = document.querySelector('.navigation');
+
+    burgerMenu.addEventListener('click', () => {
+      navigation.classList.toggle('nav-open');
+      burgerMenu.classList.toggle('is-active');
+    });
+  </script>
+  <script src="/js/script.js"></script>
+  <a href="https://wa.me/18095551234" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
