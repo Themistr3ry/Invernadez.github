@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Préstamos personales, empresariales e hipotecarios en Invernandez. Tasas competitivas y aprobación rápida."
+    />
+    <meta
+      name="keywords"
+      content="préstamos, préstamos personales, préstamos empresariales, préstamos hipotecarios, tasas, República Dominicana"
+    />
+
+    <title>Nuestros Préstamos - Invernandez</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/service.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="/index.html" class="logo">
+          <img src="/img/nvernande%20logo.png" alt="Invernandez Logo" />
+        </a>
+
+        <button class="burger-menu" aria-label="Abrir menú de navegación">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav class="navigation">
+          <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/about.html">Nosotros</a></li>
+            <li><a href="/service.html" class="is-active">Préstamos</a></li>
+            <li><a href="/employees.html">Empleados</a></li>
+            <li><a href="/office.html">Oficinas</a></li>
+            <li><a href="/contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="loans-hero">
+        <div class="container">
+          <h1>Nuestros Préstamos</h1>
+          <p>
+            Encuentra el préstamo perfecto para tus necesidades con las mejores
+            tasas del mercado
+          </p>
+        </div>
+      </section>
+
+      <section class="loans-section">
+        <div class="container">
+          <h2 class="section-title">Tipos de Préstamos</h2>
+
+          <div class="loans-grid">
+            <article
+              class="loan-card"
+              id="personales"
+              data-loan-type="personal"
+            >
+              <div class="loan-icon">
+                <i class="fas fa-user"></i>
+              </div>
+              <h3>Préstamos Personales</h3>
+              <p class="loan-description">
+                Para gastos personales, emergencias o proyectos individuales.
+                Rápido y sin complicaciones.
+              </p>
+
+              <div class="loan-features">
+                <div class="feature-item">
+                  <i class="fas fa-money-bill-wave"></i>
+                  <span
+                    >Desde <strong>RD$5,000</strong> hasta
+                    <strong>RD$500,000</strong></span
+                  >
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-percentage"></i>
+                  <span>Tasa desde <strong>12% anual</strong></span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Plazo hasta <strong>36 meses</strong></span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Aprobación en <strong>20 minutos</strong></span>
+                </div>
+              </div>
+
+              <div class="loan-benefits">
+                <h4>Beneficios:</h4>
+                <ul>
+                  <li><i class="fas fa-check"></i> Sin garantía hipotecaria</li>
+                  <li>
+                    <i class="fas fa-check"></i> Pagos semanales, quincenales o
+                    mensuales
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> Sin penalización por pago
+                    anticipado
+                  </li>
+                  <li><i class="fas fa-check"></i> Proceso 100% digital</li>
+                </ul>
+              </div>
+
+              <button class="btn-apply" onclick="openLoanForm('personal')">
+                <i class="fas fa-file-signature"></i> Solicitar Ahora
+              </button>
+            </article>
+
+            <article
+              class="loan-card featured"
+              id="empresariales"
+              data-loan-type="empresarial"
+            >
+              <div class="featured-badge">Más Popular</div>
+              <div class="loan-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>Préstamos Empresariales</h3>
+              <p class="loan-description">
+                Capital de trabajo, expansión de negocios o inversiones
+                comerciales. Impulsa tu empresa.
+              </p>
+
+              <div class="loan-features">
+                <div class="feature-item">
+                  <i class="fas fa-money-bill-wave"></i>
+                  <span
+                    >Desde <strong>RD$10,000</strong> hasta
+                    <strong>RD$2,000,000</strong></span
+                  >
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-percentage"></i>
+                  <span>Tasa desde <strong>10% anual</strong></span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Plazo hasta <strong>60 meses</strong></span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-clock"></i>
+                  <span>Aprobación en <strong>24 horas</strong></span>
+                </div>
+              </div>
+
+              <div class="loan-benefits">
+                <h4>Beneficios:</h4>
+                <ul>
+                  <li>
+                    <i class="fas fa-check"></i> Tasas preferenciales para
+                    empresas
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> Períodos de gracia disponibles
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> Asesoría financiera incluida
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i> Renovación automática
+                    disponible
+                  </li>
+                </ul>
+              </div>
+
+              <button class="btn-apply" onclick="openLoanForm('empresarial')">
+                <i class="fas fa-file-signature"></i> Solicitar Ahora
+              </button>
+            </article>
+
+            <article
+              class="loan-card"
+              id="hipotecarios"
+              data-loan-type="hipotecario"
+            >
+              <div class="loan-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <h3>Préstamos Hipotecarios</h3>
+              <p class="loan-description">
+                Haz realidad el sueño de tu casa propia con las mejores tasas
+                del mercado.
+              </p>
+
+              <div class="loan-features">
+                <div class="feature-item">
+                  <i class="fas fa-money-bill-wave"></i>
+                  <span
+                    >Desde <strong>RD$500,000</strong> hasta
+                    <strong>RD$5,000,000</strong></span
+                  >
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-percentage"></i>
+                  <span>Tasa desde <strong>8% anual</strong></span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Plazo hasta <strong>20 años</strong></span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-percent"></i>
+                  <span>Inicial desde <strong>10%</strong></span>
+                </div>
+              </div>
+
+              <div class="loan-benefits">
+                <h4>Beneficios:</h4>
+                <ul>
+                  <li><i class="fas fa-check"></i> Tasa fija o variable</li>
+                  <li><i class="fas fa-check"></i> Seguro de vida incluido</li>
+                  <li>
+                    <i class="fas fa-check"></i> Evaluación de propiedad
+                    gratuita
+                  </li>
+                  <li><i class="fas fa-check"></i> Asesoría legal incluida</li>
+                </ul>
+              </div>
+
+              <button class="btn-apply" onclick="openLoanForm('hipotecario')">
+                <i class="fas fa-file-signature"></i> Solicitar Ahora
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="requirements-section">
+        <div class="container">
+          <h2 class="section-title">Requisitos Generales</h2>
+          <div class="requirements-grid">
+            <div class="requirement-item">
+              <i class="fas fa-id-card"></i>
+              <h4>Identificación</h4>
+              <p>Cédula de identidad vigente</p>
+            </div>
+            <div class="requirement-item">
+              <i class="fas fa-file-invoice-dollar"></i>
+              <h4>Comprobante de Ingresos</h4>
+              <p>Últimos 3 meses</p>
+            </div>
+            <div class="requirement-item">
+              <i class="fas fa-home"></i>
+              <h4>Comprobante de Domicilio</h4>
+              <p>Recibo de luz o agua</p>
+            </div>
+            <div class="requirement-item">
+              <i class="fas fa-users"></i>
+              <h4>Referencias</h4>
+              <p>Personales y laborales</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="loanFormModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modalTitle">Solicitud de Préstamo</h2>
+          <button class="modal-close" onclick="closeLoanForm()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="loan-info-banner" id="loanInfoBanner">
+          <div class="loan-info-item">
+            <span class="info-label">Tipo:</span>
+            <span class="info-value" id="loanTypeName">-</span>
+          </div>
+          <div class="loan-info-item">
+            <span class="info-label">Tasa:</span>
+            <span class="info-value" id="loanRate">-</span>
+          </div>
+          <div class="loan-info-item">
+            <span class="info-label">Monto:</span>
+            <span class="info-value" id="loanAmount">-</span>
+          </div>
+          <div class="loan-info-item">
+            <span class="info-label">Plazo:</span>
+            <span class="info-value" id="loanTerm">-</span>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <form
+            id="loanApplicationForm"
+            action="/procesar-solicitud"
+            method="post"
+          >
+            <input
+              type="hidden"
+              id="tipoPrestamoInput"
+              name="tipoPrestamo"
+              value=""
+            />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Escriba su nombre"
+                  required
+                  minlength="2"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="apellidos">Apellidos *</label>
+                <input
+                  type="text"
+                  id="apellidos"
+                  name="apellidos"
+                  placeholder="Escriba sus apellidos"
+                  required
+                  minlength="2"
+                  aria-required="true"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cedula">Cédula *</label>
+                <input
+                  type="text"
+                  id="cedula"
+                  name="cedula"
+                  placeholder="000-0000000-0"
+                  required
+                  pattern="[0-9]{3}-[0-9]{7}-[0-9]{1}"
+                  aria-required="true"
+                  aria-describedby="cedula-help"
+                />
+                <small id="cedula-help">Formato: 000-0000000-0</small>
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="809-000-0000"
+                  required
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  aria-required="true"
+                  aria-describedby="telefono-help"
+                />
+                <small id="telefono-help">Formato: 809-000-0000</small>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                required
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="provincia">Provincia *</label>
+              <select
+                id="provincia"
+                name="provincia"
+                required
+                aria-required="true"
+              >
+                <option value="" disabled selected>
+                  Seleccione su provincia
+                </option>
+                <option value="Azua">Azua</option>
+                <option value="Barahona">Barahona</option>
+                <option value="Bonao">Bonao</option>
+                <option value="Salcedo-Moca">Salcedo-Moca</option>
+                <option value="Nagua">Nagua</option>
+                <option value="Romana">Romana</option>
+                <option value="San Cristobal">San Cristóbal</option>
+                <option value="Puerto Plata">Puerto Plata</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="direccion">Dirección *</label>
+              <input
+                type="text"
+                id="direccion"
+                name="direccion"
+                placeholder="Dirección actual"
+                required
+                minlength="10"
+                aria-required="true"
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="actividad">Actividad económica *</label>
+                <select
+                  id="actividad"
+                  name="actividad"
+                  required
+                  aria-required="true"
+                >
+                  <option value="" disabled selected>
+                    Seleccione su actividad
+                  </option>
+                  <option value="Comerciante">Comerciante</option>
+                  <option value="Empleado privado">Empleado privado</option>
+                  <option value="Empleado público">Empleado público</option>
+                  <option value="Trabajador independiente">
+                    Trabajador independiente
+                  </option>
+                  <option value="Taxista">Taxista</option>
+                  <option value="Motoconcho">Motoconcho</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="empresa">Empresa donde labora *</label>
+                <input
+                  type="text"
+                  id="empresa"
+                  name="empresa"
+                  placeholder="Nombre de la empresa"
+                  required
+                  aria-required="true"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="monto">Monto solicitado *</label>
+                <input
+                  type="number"
+                  id="monto"
+                  name="monto"
+                  placeholder="Ej: 50000.00"
+                  required
+                  min="5000"
+                  step="1000"
+                  aria-required="true"
+                  aria-describedby="monto-help"
+                />
+                <small id="monto-help">Mínimo: RD$5,000.00</small>
+              </div>
+
+              <div class="form-group">
+                <label for="plazo">Plazo (meses) *</label>
+                <select id="plazo" name="plazo" required aria-required="true">
+                  <option value="" disabled selected>
+                    Seleccione el plazo
+                  </option>
+                  <option value="6">6 meses</option>
+                  <option value="12">12 meses</option>
+                  <option value="18">18 meses</option>
+                  <option value="24">24 meses</option>
+                  <option value="36">36 meses</option>
+                  <option value="48">48 meses</option>
+                  <option value="60">60 meses</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="frecuenciaPago">Frecuencia de pago *</label>
+              <select
+                id="frecuenciaPago"
+                name="frecuenciaPago"
+                required
+                aria-required="true"
+              >
+                <option value="" disabled selected>
+                  Seleccione la frecuencia
+                </option>
+                <option value="semanal">Semanal</option>
+                <option value="quincenal">Quincenal</option>
+                <option value="mensual">Mensual</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="comentarios">Comentarios adicionales</label>
+              <textarea
+                id="comentarios"
+                name="comentarios"
+                rows="4"
+                placeholder="Información adicional que desee compartir..."
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button
+                type="button"
+                class="btn-cancel"
+                onclick="closeLoanForm()"
+              >
+                Cancelar
+              </button>
+              <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i> Enviar Solicitud
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-footer">
+        <div class="footer-intro">
+          <img
+            src="/img/nvernande%20logo.png"
+            alt="Invernandez Logo"
+            class="footer-logo"
+          />
+          <p>
+            Soluciones financieras confiables para impulsar tus proyectos y
+            alcanzar tus metas con respaldo profesional.
+          </p>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>COMPAÑÍA</h3>
+            <ul>
+              <li><a href="/about.html">¿Quiénes Somos?</a></li>
+              <li><a href="/employees.html">Empleados</a></li>
+              <li><a href="/contact.html">Contacto</a></li>
+              <li><a href="/faq.html">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>OFICINAS</h3>
+            <ul>
+              <li><a href="/office.html#azua">Azua</a></li>
+              <li><a href="/office.html#barahona">Barahona</a></li>
+              <li><a href="/office.html#bonao">Bonao</a></li>
+              <li><a href="/office.html#salcedo">Salcedo-Moca</a></li>
+              <li><a href="/office.html#nagua">Nagua</a></li>
+              <li><a href="/office.html#romana">Romana</a></li>
+              <li><a href="/office.html#sancristobal">San Cristóbal</a></li>
+              <li><a href="/office.html#puertoplata">Puerto Plata</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>PRODUCTOS</h3>
+            <ul>
+              <li>
+                <a href="/service.html#personales">Préstamos Personales</a>
+              </li>
+              <li>
+                <a href="/service.html#empresariales"
+                  >Préstamos Empresariales</a
+                >
+              </li>
+              <li>
+                <a href="/service.html#hipotecarios">Préstamos Hipotecarios</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>LEGAL</h3>
+            <ul>
+              <li><a href="/privacy.html">Política de Privacidad</a></li>
+              <li><a href="/terms.html">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/profile.php?id=100070985199442&locale=es_LA"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/invernandezeirl/?hl=es"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          &copy; 2025 Invernandez. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const burgerMenu = document.querySelector(".burger-menu");
+      const navigation = document.querySelector(".navigation");
+
+      burgerMenu.addEventListener("click", () => {
+        navigation.classList.toggle("nav-open");
+        burgerMenu.classList.toggle("is-active");
+      });
+      const loanData = {
+        personal: {
+          name: "Préstamo Personal",
+          rate: "Desde 12% anual",
+          amount: "RD$5,000 - RD$500,000",
+          term: "Hasta 36 meses",
+        },
+        empresarial: {
+          name: "Préstamo Empresarial",
+          rate: "Desde 10% anual",
+          amount: "RD$10,000 - RD$2,000,000",
+          term: "Hasta 60 meses",
+        },
+        hipotecario: {
+          name: "Préstamo Hipotecario",
+          rate: "Desde 8% anual",
+          amount: "RD$500,000 - RD$5,000,000",
+          term: "Hasta 20 años",
+        },
+      };
+
+      function openLoanForm(loanType) {
+        const modal = document.getElementById("loanFormModal");
+        const data = loanData[loanType];
+
+        document.getElementById(
+          "modalTitle"
+        ).textContent = `Solicitud de ${data.name}`;
+        document.getElementById("loanTypeName").textContent = data.name;
+        document.getElementById("loanRate").textContent = data.rate;
+        document.getElementById("loanAmount").textContent = data.amount;
+        document.getElementById("loanTerm").textContent = data.term;
+        document.getElementById("tipoPrestamoInput").value = loanType;
+
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLoanForm() {
+        const modal = document.getElementById("loanFormModal");
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+        document.getElementById("loanApplicationForm").reset();
+      }
+
+      window.onclick = function (event) {
+        const modal = document.getElementById("loanFormModal");
+        if (event.target === modal) {
+          closeLoanForm();
+        }
+      };
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeLoanForm();
+        }
+      });
+    </script>
+    <a
+      href="https://wa.me/18095551234"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </body>
+</html>
